@@ -9,10 +9,10 @@ const ECPair = ECPairFactory(ecc);
 
 // --- RPC URLs ---
 // V IMPORTANT: REPLACE WITH YOUR ACTUAL GETBLOCK API KEY
-const ETH_RPC_URL = import.meta.env.VITE_ETH_RPC_URL;
-// const ETH_RPC_URL = 'https://go.getblock.us/4230779882174081b895f0bb27ecd251';
-// export const SOL_RPC_URL = 'https://go.getblock.us/c15e80472e50441fbfab0b113eef7973';
-export const SOL_RPC_URL = import.meta.env.VITE_SOL_RPC_URL;
+// const ETH_RPC_URL = import.meta.env.VITE_ETH_RPC_URL;
+const ETH_RPC_URL = 'https://go.getblock.us/4230779882174081b895f0bb27ecd251';
+export const SOL_RPC_URL = 'https://go.getblock.us/c15e80472e50441fbfab0b113eef7973';
+// export const SOL_RPC_URL = import.meta.env.VITE_SOL_RPC_URL;
 
 // --- Balance Fetching ---
 export async function getEthBalance(address) {
